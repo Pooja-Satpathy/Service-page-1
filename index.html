@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" >
+            <img src="./odisha.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
+            <img src="./logo1.jpg" alt="menu" class="menu-icon" id="menubar" onclick="togglemenu()">
+        </div>
+    
+
+        <div class="picrow" id="photorow">
+            <div class="sub-nav">
+                <h1>Choose your crops</h1>
+            </div>
+            <a href="#" class="linker"><img src="./Pulses/arhar.png" alt="arhar" class="croppics"><p class="cname">ARHAR</p></a>
+            <a href="#" class="linker"><img src="./Pulses/bajra.png" alt="bajra" class="croppics"><p class="cname">BAJRA</p></a>
+            <a href="#" class="linker"><img src="./Pulses/cocunut.jpg" alt="cocunut" class="croppics"><p class="cname">COCONUT</p></a>
+            <a href="#" class="linker"><img src="./Pulses/cotton.jpg" alt="cotton" class="croppics"><p class="cname">COTTON</p></a>
+            <a href="#" class="linker"><img src="./Pulses/jute.png" alt="jute" class="croppics"><p class="cname">JUTE</p></a>
+            <a href="#" class="linker"><img src="./Pulses/Moong-Dal.png" alt="moong" class="croppics"><p class="cname">MOONG</p></a>
+            <a href="#" class="linker"><img src="./Pulses/Niger.png" alt="nigger" class="croppics"><p class="cname">NIGEERSEED</p></a>
+            <a href="#" class="linker"><img src="./Pulses/onion.png" alt="onion" class="croppics"><p class="cname">ONION</p></a>
+            <a href="#" class="linker"><img src="./Pulses/Paddy.png" alt="Paddy" class="croppics"><p class="cname">PADDY</p></a>
+            <a href="#" class="linker"><img src="./Pulses/potato.png" alt="potato" class="croppics"><p class="cname">POTATO</p></a>
+            <a href="#" class="linker"><img src="./Pulses/sesame.png" alt="sesame" class="croppics"><p class="cname">SESAME</p></a>
+            <a href="#" class="linker"><img src="./Pulses/sunflower.png" alt="sunflower" class="croppics"><p class="cname">SUNFLOWER</p></a>
+        </div>
+
+    </div>
+    
+    <script>
+        var menulist = document.getElementById("menulist");
+        var photorow = document.getElementById("photorow");
+        var menubar = document.getElementById("menubar");
+        photorow.style.marginTop="0px";
+
+        function togglemenu()
+        {
+            if(menulist.style.visibility=="collapse")
+            {
+                menulist.style.visibility = "visible";
+                photorow.style.marginTop = "100px";
+                
+            }
+
+            else if(menubar.style.display=="none")
+            {
+                menulist.style.visibility = "visible"; 
+            }
+
+            else
+            {
+                photorow.style.marginTop = "0px";
+                menulist.style.visibility = "collapse";
+
+            }
+
+        }
+        
+    </script>
+   <section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-right">
+            <h3>OUR BRANCHES</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> India </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> France </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Japan </a>
+        </div>
+
+        <div class="box" data-aos="fade-down">
+            <h3>QUICK LINKS</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> arrivals </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+        <div class="box" data-aos="fade-left">
+            <h3>SOCIAL LINKS</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i>facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i>linked-in</a>
+            <a href="#"> <i class="fab fa-pinterest"></i>pinterest</a>
+        </div>
+
+    </div>
+
+    
+</section>
+
+</body>
+</html>
